@@ -1,0 +1,26 @@
+.parent{
+    display:flex;
+    width:90vw;
+    animation: move 45s infinite linear;
+}
+.parent img{
+    width:100%;
+}
+
+@keyframes move {
+    0%{
+        transform:translateX(0%);
+    }
+    25%{
+        transform:translateX(-250%);
+    }
+    50%{
+        transform:translateX(-500%);
+    }
+    75%{
+        transform:translateX(-250%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}

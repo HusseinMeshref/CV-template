@@ -1,0 +1,135 @@
+body{
+    display:flex;
+    justify-content:space-around;
+    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article{
+    width:30%;
+}
+
+.technical{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align:center;
+
+}
+.technical div{
+    margin:10px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    padding:10px;
+    padding-bottom:15px;
+    
+}
+
+.technical div::before{
+    content:"";
+    width:90%;
+    height:5px;
+    background-color:#888;
+    position:absolute;
+    bottom:0;
+}
+.technical div::after{
+    content:"";
+    width:100%;
+    height:5px;
+    background-color:#266E69;
+    position:absolute;
+    bottom:0;
+}
+.technical .html::after{
+    width:85%;
+}
+.technical .css::after{
+    width:80%;
+}
+.technical .js::after{
+    width:75%;
+}
+.technical .algorithms::after{
+    width:70%;
+}
+.professional .proParent{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.professional .proParent>div{
+    width:120px;
+    height:120px;
+    margin:20px;
+    margin-bottom: 45px;
+    border-radius: 50%;
+    padding:3px;
+    background-color: #266E69;
+  /* background: linear-gradient(270deg, #E53B3B 50%, transparent 50%), linear-gradient(0deg, #E53B3B 50%, lightgray 50%) */
+}
+.proParent .teamwork{
+    background: linear-gradient(270deg, #266E69 50%, transparent 50%), linear-gradient(70deg, #266E69 50%, lightgray 50%);
+}
+.proParent .communication{
+    background: linear-gradient(270deg, #266E69 50%, transparent 50%), linear-gradient(60deg, #266E69 50%, lightgray 50%);
+}
+.proParent .creativity{
+    background: linear-gradient(270deg, #266E69 50%, transparent 50%), linear-gradient(80deg, #266E69 50%, lightgray 50%);
+}
+.proParent .management{
+    background: linear-gradient(270deg, #266E69 50%, transparent 50%), linear-gradient(65deg, #266E69 50%, lightgray 50%);
+}
+.proParent>div .circle{
+    width:100%;
+    height:100%;
+    background-color: white;
+    border-radius: 50%;
+    position:relative;
+}
+.proParent>div .circle::before{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%);
+    color:#266E69;
+    font-weight: bold;
+}
+
+.teamwork .circle::before{
+    content:"90%";
+}
+.communication .circle::before{
+    content:"85%";
+}
+.creativity .circle::before{
+    content:"95%";
+}
+.management .circle::before{
+    content:"80%";
+}
+.proParent>div .circle::after{
+    position:absolute;
+    bottom:-40px;
+    left:50%;
+    transform:translate(-50%);
+    color:#333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.teamwork .circle::after{
+    content:"Teamwork";
+}
+.communication .circle::after{
+    content:"Communication";
+}
+.creativity .circle::after{
+    content:"Creativity";
+}
+.management .circle::after{
+    content:"Management";
+}

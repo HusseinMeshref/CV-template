@@ -1,0 +1,38 @@
+body{
+    position: relative;
+}
+.image{
+    height:300px;
+    padding: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+img{
+    width:20%;
+    border-radius: 50%;
+}
+.social{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    left:calc( 50% - 100px);
+    width:200px;
+}
+i{
+    font-size: 40px;
+    color:#333;
+}
+i{
+    transition: all ease-in .1s;
+}
+.fa-facebook:hover{
+    
+    color:#0F90F3;
+}
+.fa-linkedin:hover{
+    color:#0a66c2;
+}
+.fa-twitter:hover{
+    color:#1da1f2;
+}
